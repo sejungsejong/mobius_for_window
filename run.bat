@@ -9,8 +9,8 @@ if %ERRORLEVEL% NEQ 0 (
     exit /b 1
 )
 
-REM Start Docker containers
-docker-compose start
+REM Start Docker containers (create if not exists)
+docker-compose up -d
 if %ERRORLEVEL% NEQ 0 (
     echo Failed to start Docker containers
     exit /b 1

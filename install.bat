@@ -26,16 +26,6 @@ if %ERRORLEVEL% NEQ 0 (
     exit /b 1
 )
 
-REM Clone Mobius repository if not exists
-if not exist Mobius (
-    echo Cloning Mobius repository...
-    git clone https://github.com/IoTKETI/Mobius.git
-    if %ERRORLEVEL% NEQ 0 (
-        echo Failed to clone Mobius repository
-        exit /b 1
-    )
-)
-
 REM Install npm dependencies
 echo Installing npm dependencies...
 cd Mobius
