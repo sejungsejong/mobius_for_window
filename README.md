@@ -1,5 +1,64 @@
 # Mobius_Docker Installation
 
+## For Windows Users
+
+### Prerequisites for Windows
+- **Docker Desktop for Windows** - Download from [Docker website](https://www.docker.com/products/docker-desktop)
+- **Git for Windows** - Download from [Git website](https://git-scm.com/download/win)
+- **Node.js** - Download from [Node.js website](https://nodejs.org/)
+- **curl** (usually comes with Windows 10/11 or Git Bash)
+
+### Installation Steps for Windows
+
+**1. Download Mobius_Docker for Windows**
+
+    git clone https://github.com/sejungsejong/mobius_for_window.git
+    cd mobius_for_window
+
+**2. Execute "install.bat"**
+
+    install.bat
+
+**3. Execute "run.bat"**
+
+    run.bat
+
+**4. Test using cURL**
+
+    test.bat
+
+## Management Commands
+
+### Linux Commands
+
+    Stop mobius docker containers
+    sudo ./stop.sh
+
+    Remove mobius docker containers
+    sudo ./remove.sh
+
+    Check status of mobius docker containers
+    sudo ./status.sh
+
+    Show logs of mobius docker containers
+    sudo ./logs.sh
+
+### Windows Commands
+
+    Stop mobius docker containers
+    stop.bat
+
+    Remove mobius docker containers
+    remove.bat
+
+    Check status of mobius docker containers
+    status.bat
+
+    Show logs of mobius docker containers
+    logs.bat
+
+## For Linux Users
+
 **1. Download Mobius_Docker from KETI's git repository**
 
     sudo git clone https://github.com/IoTKETI/Mobius_Docker.git
@@ -7,30 +66,15 @@
 
 **2. Execute "install.sh"**
 
-    sudo ./instatll.sh
-    
+    sudo ./install.sh
+
 **3. Execute "run.sh"**
 
     sudo ./run.sh
-    
+
 **4. Test using cURL**
 
     sudo ./test.sh
-  
-  
-**You can follows below commands for each objective**
-    
-    Stop mobius docker containers 
-    "sudo ./stop.sh"
-    
-    Remove mobius docker containers
-    "sudo ./remove.sh"
-
-    Check status of mobius docker containers
-    "sudo ./status.sh"
-
-    Show logs of mobius docker containers
-    "sudo ./logs.sh"
 
 
 # Snapshot of normal running Mobius docker 
